@@ -1,0 +1,45 @@
+from __future__ import annotations
+
+# Importar las librerías necesarias de tipo Time
+from datetime import datetime, timedelta
+
+from airflow.models.dag import DAG
+from airflow.operators.bash import BashOperator
+
+# Argumentos
+default_args = {
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'start_date': datetime(1900, 1, 1, tzinfo=None), # Se recomienda usar tzinfo=None o pendulum.datetime()
+    'retries': 1,
+    'retry_delay': timedelta(seconds=5)
+}
+
+# Definición del DAG
+
+with DAG(
+    dag_id='test',
+    default_args=default_args,
+    description='DAG de prueba a las 3.',
+    schedule='0 3 * * *',
+    catchup=False,
+    tags=['test', 'ejemplo'],
+) as dag:
+    
+   
+    start_task = BashOperator(
+        task_id='iniciar_proceso',
+        bash_command='echo "Comenzando el DAG test..."',
+    )
+
+    main_task = BashOperator(
+        task_id='tarea_principal_ejecucion',
+        bash_command='echo "Ejecutando la lógica de la tarea principal. Fecha de ejecución: {{ ds }}"',
+    )
+
+    end_task = BashOperator(
+        task_id='finalizar_proceso',
+        bash_command='echo "DAG test finalizado con éxito."',
+    )
+
+    start_task >> main_task >> end_task
