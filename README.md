@@ -26,16 +26,6 @@ gcloud projects add-iam-policy-binding PROJECT_ID  --member=user:USER_EMAIL --ro
 gcloud storage buckets create gs://NAME_BUCKET/ --location=REGION
 
 
-#Generaremos un fichero llamado script.py
-
-mkdir scritp.py && cd $_
-
-touch scritp.py
-
-
-#Dentro del fichero, añadiremos la seccion de conexion con GCP.
-
-
 #Creamos el Servicio Cloud Run para automatizar la parte de Storage to BigQuery.
 
 
