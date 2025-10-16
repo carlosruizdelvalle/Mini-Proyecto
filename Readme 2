@@ -16,7 +16,10 @@
 
 <img width="1894" height="383" alt="Image" src="https://github.com/user-attachments/assets/f3b72e85-f998-4157-9b11-3c93f46976cc" />
 
+
 #A la hora de subir un DAG al Airflow, es necesario crear el script PY del DAG a subir en su propia cuenta de Storage de Airflow. Dicha cuenta se crea al crear el servicio Composer.
+#Partemos de una plantilla previamente descargada y preparada, cambiando los valores indicados en el fichero adjunto.
+
 
 #Si tenemos el fichero preparado, tendremos que subir dicho fichero al Bucket del almacenamiento de Airlfow que esta en su "cuentadealmacenamiento"\dags
 
@@ -25,6 +28,8 @@
 #Debemos de esperar 2 minutos aprox para ver los resultados de forma automatica en el sistema de Airflow.
 
 <img width="1886" height="257" alt="Image" src="https://github.com/user-attachments/assets/f8453030-3909-41fa-ad73-8d123e5daf3a" />
+
+Veremos las rutas del DAG iniciadas y terminadas. Observaremos mas detalles que nos ofrece el DAG para su seguimiento
 
 <img width="1349" height="688" alt="Image" src="https://github.com/user-attachments/assets/c8c2996f-17b5-41a6-b37b-2ff3759da570" />
 
