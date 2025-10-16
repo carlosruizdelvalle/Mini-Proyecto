@@ -1,4 +1,5 @@
 # Mini-Proyecto
+# Python + GCP + BQ
 
 
 #Iniciaremos sesion en Cloud SSH
