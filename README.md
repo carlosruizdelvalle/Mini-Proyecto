@@ -42,6 +42,9 @@ gcloud storage buckets create gs://NAME_BUCKET/ --location=REGION
 <img width="549" height="208" alt="Image" src="https://github.com/user-attachments/assets/0f4a330f-d411-441d-9ba3-0d8d6c65c772" />
 
 
+#Crearemos y asignaremos un nombre para el Dataset con la region de nuestro proyecto.
+
+<img width="540" height="788" alt="Image" src="https://github.com/user-attachments/assets/612cd43f-8bd2-4ff5-bbc8-2b4d3981b50c" />
 
 
 
@@ -65,6 +68,8 @@ gcloud storage buckets create gs://NAME_BUCKET/ --location=REGION
 <img width="1894" height="383" alt="Image" src="https://github.com/user-attachments/assets/f3b72e85-f998-4157-9b11-3c93f46976cc" />
 
 #A la hora de subir un DAG al Airflow, es necesario crear el script PY del DAG a subir en su propia cuenta de Storage de Airflow. Dicha cuenta se crea al crear el servicio Composer.
+#Partemos de una plantilla previamente descargada y preparada, cambiando los valores indicados en el fichero adjunto.
+
 
 #Si tenemos el fichero preparado, tendremos que subir dicho fichero al Bucket del almacenamiento de Airlfow que esta en su "cuentadealmacenamiento"\dags
 
@@ -74,10 +79,9 @@ gcloud storage buckets create gs://NAME_BUCKET/ --location=REGION
 
 <img width="1886" height="257" alt="Image" src="https://github.com/user-attachments/assets/f8453030-3909-41fa-ad73-8d123e5daf3a" />
 
+Veremos las rutas del DAG iniciadas y terminadas. Observaremos mas detalles que nos ofrece el DAG para su seguimiento
+
 <img width="1349" height="688" alt="Image" src="https://github.com/user-attachments/assets/c8c2996f-17b5-41a6-b37b-2ff3759da570" />
 
 <img width="1112" height="395" alt="Image" src="https://github.com/user-attachments/assets/544b2074-c97e-465c-a849-ddfb066e294e" />
 
-#Crearemos y asignaremos un nombre para el Dataset con la region de nuestro proyecto.
-
-<img width="540" height="788" alt="Image" src="https://github.com/user-attachments/assets/612cd43f-8bd2-4ff5-bbc8-2b4d3981b50c" />
