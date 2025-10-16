@@ -29,7 +29,6 @@ gcloud storage buckets create gs://NAME_BUCKET/ --location=REGION
 #Creamos el Servicio Cloud Run para automatizar la parte de Storage to BigQuery.
 
 
-
 <img width="1075" height="605" alt="Image" src="https://github.com/user-attachments/assets/c87f2c98-200c-41f8-aad8-183e499ff009" />
 
 
@@ -37,9 +36,10 @@ gcloud storage buckets create gs://NAME_BUCKET/ --location=REGION
 
 <img width="823" height="625" alt="Image" src="https://github.com/user-attachments/assets/a5ae0191-2a72-4189-a355-99990d4d510c" />
 
-Tras ello, nos dirigimos a BigQuery para la creacion del Dataset.
+#Tras ello, nos dirigimos a BigQuery para la creacion del Dataset.
 
 <img width="549" height="208" alt="Image" src="https://github.com/user-attachments/assets/0f4a330f-d411-441d-9ba3-0d8d6c65c772" />
-Crearemos y asignaremos un nombre para el Dataset con la region de nuestro proyecto.
+
+#Crearemos y asignaremos un nombre para el Dataset con la region de nuestro proyecto.
 
 <img width="540" height="788" alt="Image" src="https://github.com/user-attachments/assets/612cd43f-8bd2-4ff5-bbc8-2b4d3981b50c" />
